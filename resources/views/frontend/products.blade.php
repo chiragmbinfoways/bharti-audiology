@@ -8,8 +8,8 @@
 <div class="ps-categogy ps-product ">
     <div class="container">
         <ul class="ps-breadcrumb">
-            <li class="ps-breadcrumb__item"><a href="index.html">Home</a></li>
-            <li class="ps-breadcrumb__item"><a href="index.html">Products </a></li>
+            <li class="ps-breadcrumb__item"><a href="/">Home</a></li>
+            <li class="ps-breadcrumb__item">Products </li>
         </ul>
         <div class="ps-categogy__content">
             <div class="row row-reverse">

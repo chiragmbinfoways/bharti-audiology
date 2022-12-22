@@ -7,7 +7,7 @@
     <!-- Main content -->
     <div class="container">
         <ul class="ps-breadcrumb">
-            <li class="ps-breadcrumb__item"><a href="index.html">Home</a></li>
+            <li class="ps-breadcrumb__item"><a href="/">Home</a></li>
             <li class="ps-breadcrumb__item active" aria-current="page"> Hearing Loss</li>
         </ul>
         <h2 class="">About Hearing Loss</h2>

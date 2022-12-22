@@ -5002,7 +5002,7 @@ textarea.form-control {
   }
 
   .ps-product--list .ps-product__price {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .ps-product--list .ps-product__title {
@@ -5620,8 +5620,9 @@ textarea.form-control {
   height: 400%;
   -o-object-fit: cover;
   object-fit: cover;
-  top: auto;
-  bottom: -500px;
+  /* top: auto;
+  bottom: -500px; */
+  position: relative;
 }
 
 @media (min-width: 768px) {

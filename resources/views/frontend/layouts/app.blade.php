@@ -151,7 +151,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="ps-footer--address">
-                                        <div class="ps-logo"><a href="index.html"> <img src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-white" src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-black" src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-white-all" src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-green" src="{{asset('frontend/img/logo.png')}}" alt=""></a></div>
+                                        <div class="ps-logo"><a href=""> <img src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-white" src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-black" src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-white-all" src="{{asset('frontend/img/logo.png')}}" alt=""><img class="logo-green" src="{{asset('frontend/img/logo.png')}}" alt=""></a></div>
                                         <div class="ps-footer__title">Our store</div>
                                         <p>{{$address->value}}</p>
                                         <ul class="ps-social">
@@ -231,6 +231,23 @@
         <div class="ps-preloader-section ps-preloader-left"></div>
         <div class="ps-preloader-section ps-preloader-right"></div>
     </div>
+    <div class="ps-navigation--footer">
+        <div class="ps-nav__item"><a href="#" id="open-menu"><i class="icon-menu"></i></a><a href="#" id="close-menu"><i class="icon-cross"></i></a></div>
+    </div>
+
+    <div class="ps-menu--slidebar">
+        <div class="ps-menu__content">
+            <ul class="menu--mobile">
+                @foreach ($menus as $menu)
+                @if ($menu->parent_id == null)
+                    <li class="category-list.html"><a href="{{env('APP_URL')}}/{{$menu->link}}">{{ $menu->name }}</a></li>
+                @endif
+            @endforeach
+            </ul>
+        </div>
+    </div>
+
+
     
     
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
